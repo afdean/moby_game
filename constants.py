@@ -3,9 +3,9 @@ File containing constants to be used throughout the game
 """
 
 #General constants
-SCREEN = [1024, 768]
-WORLD = [1024, 768]
-TICK = 60
+SCREEN_SIZE = [1024, 768]
+WORLD_SIZE = [1024, 768]
+TICK_RATE = 60
 
 #Miscellaneous constants
 INFINITY = float("inf")
