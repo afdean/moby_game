@@ -26,16 +26,16 @@ class GameWorld():
         # Background surface that will hold everything
         background = pygame.Surface(worlddimensions)
         background = background.convert()
-        background.fill((255, 255, 255))
+        background.fill((150, 0, 150))
         # Debug surface
-        debug = pygame.Surface(worlddimensions)
-        debug = debug.convert()
-        debug.fill((255, 255, 255))
-        background.blit(debug, (0, 0))
+        #debug = pygame.Surface(worlddimensions)
+        #debug = debug.convert()
+        #debug.fill((255, 255, 255))
+        #background.blit(debug, (0, 0))
         screen.blit(background, (0, 0))
         pygame.display.flip()
         #store stuff
         self.screen = screen
         self.seed = seed or self.time
         self.background = background
-        self.debug = debug
+        #self.debug = debug

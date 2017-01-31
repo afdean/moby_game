@@ -14,3 +14,5 @@ from constants import *
 from core import *
 
 world = GameWorld(None, (1224, 900), (1224, 900))
+
+time.sleep(3)
