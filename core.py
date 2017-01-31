@@ -16,26 +16,32 @@ class GameWorld():
     Overarching structure holding the screen, actors, objects, etc.
     """
 
-    def __init__(self, seed, worlddimensions, screendimensions):
-        #initialize random seed
+    def __init__(self, seed, world_dimensions, screen_dimensions):
+        # Initialize random seed
         self.time = time.time()
         random.seed(self.time)
-        #initialize pygame and set up screen and background surface
+
+        # Initialize pygame and set up screen and background surface
         pygame.init()
-        screen = pygame.display.set_mode(screendimensions)
+        screen = pygame.display.set_mode(screen_dimensions)
+
         # Background surface that will hold everything
-        background = pygame.Surface(worlddimensions)
+        background = pygame.Surface(world_dimensions)
         background = background.convert()
         background.fill((150, 0, 150))
+
         # Debug surface
-        #debug = pygame.Surface(worlddimensions)
+        #debug = pygame.Surface(world_dimensions)
         #debug = debug.convert()
         #debug.fill((255, 255, 255))
+
         #background.blit(debug, (0, 0))
         screen.blit(background, (0, 0))
         pygame.display.flip()
-        #store stuff
+
+        # Store information about the game
         self.screen = screen
         self.seed = seed or self.time
         self.background = background
+
         #self.debug = debug
