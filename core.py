@@ -70,7 +70,7 @@ class GameWorld():
 
         pygame.quit()
 
-    def handleEvents(self):
+    def handle_events(self):
         for event in pygame.event.get():
             if event.type == QUIT:
                 self.running = False
