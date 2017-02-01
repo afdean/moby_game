@@ -15,7 +15,7 @@ from core import *
 
 def run():
     world = GameWorld(None, (1224, 900), (1224, 900))
-    time.sleep(3)
+    world.run()
 
 if __name__ == '__main__':
     run()

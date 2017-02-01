@@ -10,6 +10,8 @@ import pygame
 import numpy
 from pygame.locals import *
 
+from constants import *
+
 class GameWorld():
 
     """
@@ -24,6 +26,7 @@ class GameWorld():
         # Initialize pygame and set up screen and background surface
         pygame.init()
         screen = pygame.display.set_mode(screen_dimensions)
+        pygame.display.set_caption('Moby')
 
         # Background surface that will hold everything
         background = pygame.Surface(world_dimensions)
@@ -45,3 +48,20 @@ class GameWorld():
         self.background = background
 
         #self.debug = debug
+
+    def run(self):
+        clock = pygame.time.Clock()
+        while True:
+            clock.tick(TICK_RATE)
+            delta = clock.get_rawtime()
+            self.handleEvents()
+
+    def handleEvents(self):
+        for event in pygame.event.get():
+            if event.type == QUIT:
+                pygame.quit()
+                sys.exit(0)
+            #elif event.type == KEYDOWN:
+                #if event.key == K_ESCAPE:
+                    #pygame.quit()
+                    #sys.exit(0)
