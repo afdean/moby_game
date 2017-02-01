@@ -43,6 +43,7 @@ class GameWorld():
         pygame.display.flip()
 
         # Store information about the game
+        self.running = True
         self.screen = screen
         self.seed = seed or self.time
         self.background = background
@@ -53,13 +54,13 @@ class GameWorld():
         clock = pygame.time.Clock()
 
         running = True
-        while running:
+        while self.running:
             #Update time
             clock.tick(TICK_RATE)
             delta = clock.get_rawtime()
 
             #Handle inputs
-            running = self.handleEvents()
+            self.handleEvents()
 
             #Update Game State
 
@@ -72,5 +73,4 @@ class GameWorld():
     def handleEvents(self):
         for event in pygame.event.get():
             if event.type == QUIT:
-                return False
-        return True
+                self.running = False
