@@ -51,17 +51,26 @@ class GameWorld():
 
     def run(self):
         clock = pygame.time.Clock()
-        while True:
+
+        running = True
+        while running:
+            #Update time
             clock.tick(TICK_RATE)
             delta = clock.get_rawtime()
-            self.handleEvents()
+
+            #Handle inputs
+            running = self.handleEvents()
+
+            #Update Game State
+
+            #Rendering
+            pygame.display.update()
+            pygame.display.flip()
+
+        pygame.quit()
 
     def handleEvents(self):
         for event in pygame.event.get():
             if event.type == QUIT:
-                pygame.quit()
-                sys.exit(0)
-            #elif event.type == KEYDOWN:
-                #if event.key == K_ESCAPE:
-                    #pygame.quit()
-                    #sys.exit(0)
+                return False
+        return True
