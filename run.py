@@ -9,7 +9,6 @@ import time
 import pygame
 import numpy
 from pygame.locals import *
-
 from constants import *
 from core import *
 

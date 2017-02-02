@@ -9,7 +9,6 @@ import time
 import pygame
 import numpy
 from pygame.locals import *
-
 from constants import *
 
 class GameWorld():
@@ -60,7 +59,7 @@ class GameWorld():
             delta = clock.get_rawtime()
 
             #Handle inputs
-            self.handleEvents()
+            self.handle_events()
 
             #Update Game State
 
