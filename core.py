@@ -47,17 +47,17 @@ class GameWorld():
         random.seed(self.time)
 
         # Initialize pygame and its attributes:
-        # Screen, mixer and background surface
+        # Screen, mixer, clock and background surface
         pygame.init()
         pygame.mixer.init()
         screen = pygame.display.set_mode(screen_dimensions)
-        pygame.display.set_caption('Moby')
+        pygame.display.set_caption(CAPTION)
         clock = pygame.time.Clock()
 
         # Background surface that will hold everything
         background = pygame.Surface(world_dimensions)
         background = background.convert()
-        background.fill((150, 0, 150))
+        background.fill(PURPLE)
 
         # Debug surface
         #debug = pygame.Surface(world_dimensions)
