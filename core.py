@@ -35,6 +35,8 @@ class Thing(ABC):
 #     def __init__(self, image, position, orientation, speed, world):
 #         pygame.sprite.Sprite.__init__(self)
 
+#class PlayerAgent(Mover):
+
 class GameWorld():
 
     """
@@ -53,11 +55,12 @@ class GameWorld():
         screen = pygame.display.set_mode(screen_dimensions)
         pygame.display.set_caption(CAPTION)
         clock = pygame.time.Clock()
+        all_sprites = pygame.sprite.Group()
 
         # Background surface that will hold everything
         background = pygame.Surface(world_dimensions)
         background = background.convert()
-        background.fill(PURPLE)
+        background.fill(WHITE)
 
         # Debug surface
         #debug = pygame.Surface(world_dimensions)
@@ -68,12 +71,13 @@ class GameWorld():
         screen.blit(background, (0, 0))
         pygame.display.flip()
 
-        # Store information about the game
+        # Store game attributes
         self.running = True
         self.screen = screen
         self.seed = seed or self.time
         self.background = background
         self.clock = clock
+        self.all_sprites = all_sprites
 
         #self.debug = debug
 
@@ -86,9 +90,10 @@ class GameWorld():
             #Handle inputs
             self.handle_inputs()
 
-            #Update Game State
+            #Update game state
 
             #Rendering
+            self.all_sprites.draw(self.screen)
             pygame.display.update()
             pygame.display.flip()
 
@@ -98,3 +103,6 @@ class GameWorld():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 self.running = False
+
+    def set_player_agent(self, player_agent):
+        self.all_sprites.add(player_agent)
