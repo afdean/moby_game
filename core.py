@@ -1,7 +1,8 @@
 """
 File containing main functions to run the game
 """
-
+from __future__ import print_function
+from abc import ABC, abstractmethod
 import sys
 import math
 import random
@@ -10,6 +11,20 @@ import pygame
 import numpy
 from pygame.locals import *
 from constants import *
+
+class Thing(ABC):
+
+    """
+    Base model for every 'tangible' object in the game.
+    """
+    @abstractmethod
+    def update(self, delta):
+        pass
+
+    @abstractmethod
+    def collision(self, thing):
+        pass
+
 
 class GameWorld():
 
