@@ -47,11 +47,12 @@ class GameWorld():
         random.seed(self.time)
 
         # Initialize pygame and its attributes:
-        # Set up screen, mixer and background surface
+        # Screen, mixer and background surface
         pygame.init()
         pygame.mixer.init()
         screen = pygame.display.set_mode(screen_dimensions)
         pygame.display.set_caption('Moby')
+        clock = pygame.time.Clock()
 
         # Background surface that will hold everything
         background = pygame.Surface(world_dimensions)
@@ -72,16 +73,15 @@ class GameWorld():
         self.screen = screen
         self.seed = seed or self.time
         self.background = background
-        # self.clock = clock
+        self.clock = clock
 
         #self.debug = debug
 
     def run(self):
-        clock = pygame.time.Clock()
         while self.running:
             #Update time
-            clock.tick(TICK_RATE)
-            delta = clock.get_rawtime()
+            self.clock.tick(TICK_RATE)
+            delta = self.clock.get_rawtime()
 
             #Handle inputs
             self.handle_inputs()
