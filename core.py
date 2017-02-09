@@ -16,6 +16,7 @@ class Thing(ABC):
 
     """
     Base model for every 'tangible' object in the world
+    Considered to be like an abstract interface
     """
 
     @abstractmethod
@@ -26,16 +27,45 @@ class Thing(ABC):
     def collision(self, thing):
         pass
 
-# class Mover(pygame.sprite.Sprite, Thing):
+class Mover(pygame.sprite.Sprite, Thing):
 
-#     """
-#     Base model for every movable object
-#     """
+    """
+    Base model for every movable object
+    Still abstract class from Thing inheritance
+    Mover should never be instantiated itself
+    """
 
-#     def __init__(self, image, position, orientation, speed, world):
-#         pygame.sprite.Sprite.__init__(self)
+    def __init__(self, world, image, position, orientation, speed):
+        # Every sprite must be initialized this way
+        pygame.sprite.Sprite.__init__(self)
 
-#class PlayerAgent(Mover):
+    #Put abstract methods every mover requires here
+
+class PlayerAgent(Mover):
+
+    """
+    Base model for agent a player can control
+    May continue to be abstract due to more abstract methods as we decide on modelling later
+    For now, PlayerAgent is instantiable
+    """
+
+    #Will include more arguments in constructor as required
+    def __init__(self, world, image, position, orientation, speed):
+        super.__init__(self, world, image, position, orientation, speed)
+        # Dummy "image" to use for now (replace with actual images later)
+        self.image = pygame.Surface((100,100))
+        self.image.fill(PURPLE)
+        self.rect = self.image.get_rect()
+        #Center of rect is directly in center of screen
+        self.rect.center = position
+
+    # Implement later
+    def update(self, delta):
+        return None
+
+    #Implement later
+    def collision(self, thing):
+        return None
 
 class GameWorld():
 
@@ -49,13 +79,14 @@ class GameWorld():
         random.seed(self.time)
 
         # Initialize pygame and its attributes:
-        # Screen, mixer, clock and background surface
+        # Screen, mixer, clock, sprites and background surface
         pygame.init()
         pygame.mixer.init()
         screen = pygame.display.set_mode(screen_dimensions)
         pygame.display.set_caption(CAPTION)
         clock = pygame.time.Clock()
         all_sprites = pygame.sprite.Group()
+        mover_sprites = pygame.sprite.Group()
 
         # Background surface that will hold everything
         background = pygame.Surface(world_dimensions)
@@ -78,21 +109,24 @@ class GameWorld():
         self.background = background
         self.clock = clock
         self.all_sprites = all_sprites
+        self.mover_sprites = mover_sprites
 
         #self.debug = debug
 
     def run(self):
         while self.running:
-            #Update time
+            # Update time
             self.clock.tick(TICK_RATE)
             delta = self.clock.get_rawtime()
 
-            #Handle inputs
+            # Handle inputs
             self.handle_inputs()
 
-            #Update game state
+            # Update game state
+            # Consider/will? replacing when objects concretely implement update
+            self.all_sprites.update()
 
-            #Rendering
+            # Rendering
             self.all_sprites.draw(self.screen)
             pygame.display.update()
             pygame.display.flip()
@@ -104,5 +138,10 @@ class GameWorld():
             if event.type == pygame.QUIT:
                 self.running = False
 
-    def set_player_agent(self, player_agent):
-        self.all_sprites.add(player_agent)
+    def add_sprite(self, sprite):
+        self.all_sprites.add(sprite)
+
+    def add_mover(self, mover):
+        self.add_sprite(self, mover)
+        self.mover_sprites.add(mover)
+

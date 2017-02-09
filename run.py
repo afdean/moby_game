@@ -1,5 +1,5 @@
 """
-File where the game is executed
+Module where details of GameWorld are initialized and executed
 """
 
 import sys
@@ -13,7 +13,12 @@ from constants import *
 from core import *
 
 def run():
-    world = GameWorld(None, (1224, 900), (1224, 900))
+    """
+    Method to pass details into GameWorld, and other game objects
+    """
+
+    world = GameWorld(None, WORLD_SIZE, SCREEN_SIZE)
+    player = PlayerAgent(world, None, CENTER, None, None)
     world.run()
 
 if __name__ == '__main__':
