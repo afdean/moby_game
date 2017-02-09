@@ -3,8 +3,9 @@ File containing constants to be used throughout the game
 """
 
 #General constants
-SCREEN_SIZE = [1024, 768]
-WORLD_SIZE = [1024, 768]
+SCREEN_SIZE = (1024, 768)
+WORLD_SIZE = (1024, 768)
+CENTER = (SCREEN_SIZE[0] / 2, SCREEN_SIZE[1] / 2)
 TICK_RATE = 60
 CAPTION = "Moby"
 
