@@ -17,7 +17,7 @@ def run():
     Method to pass details into GameWorld, and other game objects
     """
 
-    world = GameWorld(None, WORLD_SIZE, SCREEN_SIZE)
+    world = GameWorld()
     player = PlayerAgent(world, None, CENTER, None, None)
     world.add_mover(player)
     world.run()

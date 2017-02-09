@@ -55,7 +55,7 @@ class PlayerAgent(Mover):
     def __init__(self, world, image, position, orientation, speed):
         super(PlayerAgent, self).__init__(world, image, position, orientation, speed)
         # Dummy "image" to use for now (replace with actual images later)
-        self.image = pygame.Surface((100,100))
+        self.image = pygame.Surface((50,50))
         self.image.fill(PURPLE)
         self.rect = self.image.get_rect()
         #Center of rect is directly in center of screen
@@ -64,8 +64,8 @@ class PlayerAgent(Mover):
         self.speed = speed
 
     # Implement later
-    # def update(self, delta):
-    #     return None
+    def update(self, delta):
+        self.rect.x += 5
 
     #Implement later
     def collision(self, thing):
@@ -77,7 +77,7 @@ class GameWorld():
     Overarching structure holding the screen, actors, objects, etc.
     """
 
-    def __init__(self, seed, world_dimensions, screen_dimensions):
+    def __init__(self):
         # Initialize random seed
         self.time = time.time()
         random.seed(self.time)
@@ -86,14 +86,14 @@ class GameWorld():
         # Screen, mixer, clock, sprites and background surface
         pygame.init()
         pygame.mixer.init()
-        screen = pygame.display.set_mode(screen_dimensions)
+        screen = pygame.display.set_mode(SCREEN_SIZE)
         pygame.display.set_caption(CAPTION)
         clock = pygame.time.Clock()
         all_sprites = pygame.sprite.Group()
         mover_sprites = pygame.sprite.Group()
 
         # Background surface that will hold everything
-        background = pygame.Surface(world_dimensions)
+        background = pygame.Surface(WORLD_SIZE)
         background = background.convert()
         background.fill(WHITE)
 
@@ -109,7 +109,7 @@ class GameWorld():
         # Store game attributes
         self.running = True
         self.screen = screen
-        self.seed = seed or self.time
+        self.seed = self.time
         self.background = background
         self.clock = clock
         self.all_sprites = all_sprites
@@ -127,7 +127,7 @@ class GameWorld():
             self.handle_inputs()
 
             # Update game state
-            # Consider/will? replacing when objects concretely implement update
+            # Consider/will? replacing this when objects concretely implement update
             self.all_sprites.update(delta)
 
             # Rendering
