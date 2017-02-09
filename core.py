@@ -43,7 +43,7 @@ class Mover(pygame.sprite.Sprite, Thing):
 
     #Put abstract methods every mover requires here
 
-class PlayerAgent(Mover):
+class Player(Mover):
 
     """
     Base model for agent a player can control
@@ -53,18 +53,48 @@ class PlayerAgent(Mover):
 
     #Will include more arguments in constructor as required
     def __init__(self, world, image, position, orientation, speed):
-        super(PlayerAgent, self).__init__(world, image, position, orientation, speed)
-        # Dummy "image" to use for now (replace with actual images later)
+        super(Player, self).__init__(world, image, position, orientation, speed)
         self.image = pygame.image.load(image).convert()
         self.rect = self.image.get_rect()
+        self.image.set_colorkey(WHITE)
         #Center of rect is directly in center of screen
         self.rect.center = position
         self.orientation = orientation
         self.speed = speed
+        self.dist_x = 0
+        self.dist_y = 0
 
     # Implement later
     def update(self, delta):
-        self.rect.x += 5
+        self.dist_x = 0
+        self.dist_y = 0
+        keystate = pygame.key.get_pressed()
+        if keystate[pygame.K_w] and keystate[pygame.K_a]:
+            self.dist_x = -5
+            self.dist_y = -5
+        elif keystate[pygame.K_w] and keystate[pygame.K_d]:
+            self.dist_x = 5
+            self.dist_y = -5
+        elif keystate[pygame.K_s] and keystate[pygame.K_a]:
+            self.dist_x = -5
+            self.dist_y = 5
+        elif keystate[pygame.K_s] and keystate[pygame.K_d]:
+            self.dist_x = 5
+            self.dist_y = 5
+        elif keystate[pygame.K_w]:
+            self.dist_x = 0
+            self.dist_y = -5
+        elif keystate[pygame.K_a]:
+            self.dist_x = -5
+            self.dist_y = 0
+        elif keystate[pygame.K_s]:
+            self.dist_x = 0
+            self.dist_y = 5
+        elif keystate[pygame.K_d]:
+            self.dist_x = 5
+            self.dist_y = 0
+        self.rect.x += self.dist_x
+        self.rect.y += self.dist_y
 
     #Implement later
     def collision(self, thing):

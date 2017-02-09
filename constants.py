@@ -22,4 +22,4 @@ BLUE = (0, 0, 255)
 PURPLE = (150, 0, 150)
 
 #Assets
-PLAYER = "img/hero.png"
+HERO = "img/hero.png"
