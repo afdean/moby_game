@@ -15,8 +15,9 @@ from constants import *
 class Thing(ABC):
 
     """
-    Base model for every 'tangible' object in the game.
+    Base model for every 'tangible' object in the world
     """
+
     @abstractmethod
     def update(self, delta):
         pass
@@ -25,6 +26,14 @@ class Thing(ABC):
     def collision(self, thing):
         pass
 
+# class Mover(pygame.sprite.Sprite, Thing):
+
+#     """
+#     Base model for every movable object
+#     """
+
+#     def __init__(self, image, position, orientation, speed, world):
+#         pygame.sprite.Sprite.__init__(self)
 
 class GameWorld():
 
@@ -37,8 +46,10 @@ class GameWorld():
         self.time = time.time()
         random.seed(self.time)
 
-        # Initialize pygame and set up screen and background surface
+        # Initialize pygame and its attributes:
+        # Set up screen, mixer and background surface
         pygame.init()
+        pygame.mixer.init()
         screen = pygame.display.set_mode(screen_dimensions)
         pygame.display.set_caption('Moby')
 
@@ -61,20 +72,19 @@ class GameWorld():
         self.screen = screen
         self.seed = seed or self.time
         self.background = background
+        # self.clock = clock
 
         #self.debug = debug
 
     def run(self):
         clock = pygame.time.Clock()
-
-        running = True
         while self.running:
             #Update time
             clock.tick(TICK_RATE)
             delta = clock.get_rawtime()
 
             #Handle inputs
-            self.handle_events()
+            self.handle_inputs()
 
             #Update Game State
 
@@ -84,7 +94,7 @@ class GameWorld():
 
         pygame.quit()
 
-    def handle_events(self):
+    def handle_inputs(self):
         for event in pygame.event.get():
-            if event.type == QUIT:
+            if event.type == pygame.QUIT:
                 self.running = False
