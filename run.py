@@ -19,6 +19,7 @@ def run():
 
     world = GameWorld(None, WORLD_SIZE, SCREEN_SIZE)
     player = PlayerAgent(world, None, CENTER, None, None)
+    world.add_mover(player)
     world.run()
 
 if __name__ == '__main__':

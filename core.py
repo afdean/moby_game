@@ -19,6 +19,8 @@ class Thing(ABC):
     Considered to be like an abstract interface
     """
 
+    #Note that this method might need to be renamed since sprite
+    #Has an update method
     @abstractmethod
     def update(self, delta):
         pass
@@ -51,17 +53,19 @@ class PlayerAgent(Mover):
 
     #Will include more arguments in constructor as required
     def __init__(self, world, image, position, orientation, speed):
-        super.__init__(self, world, image, position, orientation, speed)
+        super(PlayerAgent, self).__init__(world, image, position, orientation, speed)
         # Dummy "image" to use for now (replace with actual images later)
         self.image = pygame.Surface((100,100))
         self.image.fill(PURPLE)
         self.rect = self.image.get_rect()
         #Center of rect is directly in center of screen
         self.rect.center = position
+        self.orientation = orientation
+        self.speed = speed
 
     # Implement later
-    def update(self, delta):
-        return None
+    # def update(self, delta):
+    #     return None
 
     #Implement later
     def collision(self, thing):
@@ -124,7 +128,7 @@ class GameWorld():
 
             # Update game state
             # Consider/will? replacing when objects concretely implement update
-            self.all_sprites.update()
+            self.all_sprites.update(delta)
 
             # Rendering
             self.all_sprites.draw(self.screen)
@@ -142,6 +146,6 @@ class GameWorld():
         self.all_sprites.add(sprite)
 
     def add_mover(self, mover):
-        self.add_sprite(self, mover)
+        self.add_sprite(mover)
         self.mover_sprites.add(mover)
 
