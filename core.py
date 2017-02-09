@@ -118,6 +118,10 @@ class GameWorld():
         #self.debug = debug
 
     def run(self):
+        """
+        Main game loop (inputs, update and render)
+        """
+
         while self.running:
             # Update time
             self.clock.tick(TICK_RATE)
@@ -131,6 +135,7 @@ class GameWorld():
             self.all_sprites.update(delta)
 
             # Rendering
+            self.screen.fill(WHITE)
             self.all_sprites.draw(self.screen)
             pygame.display.update()
             pygame.display.flip()
@@ -148,4 +153,3 @@ class GameWorld():
     def add_mover(self, mover):
         self.add_sprite(mover)
         self.mover_sprites.add(mover)
-
