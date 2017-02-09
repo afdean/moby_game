@@ -1,0 +1,1132 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"all",
+				"all_sprites"
+			],
+			[
+				"__",
+				"__init__"
+			],
+			[
+				"future",
+				"__future__〔module〕"
+			],
+			[
+				"siz",
+				"sizeHor"
+			],
+			[
+				"size",
+				"sizeVer"
+			],
+			[
+				"outside",
+				"outsideBoundariesY"
+			],
+			[
+				"check",
+				"checkInsideGrid"
+			],
+			[
+				"rig",
+				"rightFlag"
+			],
+			[
+				"le",
+				"leftFlag"
+			],
+			[
+				"curre",
+				"currentLinePoint"
+			],
+			[
+				"curr",
+				"currentLinePoint"
+			],
+			[
+				"ver",
+				"vertHitPoint"
+			],
+			[
+				"hor",
+				"horHitPoint"
+			],
+			[
+				"cu",
+				"currentLinePoint"
+			],
+			[
+				"conver",
+				"convertToGridValue"
+			],
+			[
+				"cell",
+				"cellsize"
+			],
+			[
+				"get",
+				"getLines"
+			],
+			[
+				"rever",
+				"reverseLine"
+			],
+			[
+				"horP",
+				"horPointY"
+			],
+			[
+				"itera",
+				"iteratorX"
+			],
+			[
+				"iter",
+				"iteratorY"
+			],
+			[
+				"str",
+				"stringArray"
+			],
+			[
+				"char",
+				"charCount"
+			],
+			[
+				"fr",
+				"fruitShops"
+			],
+			[
+				"or",
+				"order"
+			],
+			[
+				"fruit",
+				"fruitPrices"
+			],
+			[
+				"order",
+				"orderList"
+			],
+			[
+				"left",
+				"leftRightY"
+			],
+			[
+				"iterator",
+				"iteratorY"
+			],
+			[
+				"vertPoint",
+				"vertPointY"
+			],
+			[
+				"right",
+				"rightPointY"
+			],
+			[
+				"rightPon",
+				"rightPointX"
+			],
+			[
+				"true",
+				"True"
+			],
+			[
+				"tota",
+				"total_boxes"
+			],
+			[
+				"trans",
+				"trans_line_floor"
+			],
+			[
+				"tra",
+				"traversable"
+			],
+			[
+				"ce",
+				"cellsize"
+			],
+			[
+				"cel",
+				"cellColumns"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "core.py",
+			"settings":
+			{
+				"buffer_size": 4292,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\"\"\"\nFile containing constants to be used throughout the game\n\"\"\"\n\n#General constants\nSCREEN_SIZE = (1024, 768)\nWORLD_SIZE = (1024, 768)\nCENTER = (SCREEN_SIZE[0] / 2, SCREEN_SIZE[1] / 2)\nTICK_RATE = 60\nCAPTION = \"Moby\"\n\n#Miscellaneous constants\nINFINITY = float(\"inf\")\nEPSILON = 0.000001\n\n#Colors\nWHITE = (255, 255, 255)\nBLACK = (0, 0, 0)\nRED = (255, 0, 0)\nGREEN = (0, 255, 0)\nBLUE = (0, 0, 255)\nPURPLE = (150, 0, 150)\n\n#Assets\nimg\\\n",
+			"file": "constants.py",
+			"file_size": 427,
+			"file_write_time": 131310915580000000,
+			"settings":
+			{
+				"buffer_size": 432,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "run.py",
+			"settings":
+			{
+				"buffer_size": 478,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/andrewdean/github_gt/cs7632/homework3/core.py",
+			"settings":
+			{
+				"buffer_size": 37764,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/andrewdean/Desktop/test.py",
+			"settings":
+			{
+				"buffer_size": 1653,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "# Pygame sprite Example"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "space",
+		"selected_items":
+		[
+			[
+				"space",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"sublimeco",
+				"SublimeCodeIntel: Disable Live Autocompletion"
+			],
+			[
+				"termin",
+				"Terminal: Open"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Package Control: Install Package"
+			],
+			[
+				"proj",
+				"Project: Save As"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Install Package Control"
+			]
+		],
+		"width": 564.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"python3 core.py"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/andrewdean/github/moby_game"
+	],
+	"file_history":
+	[
+		"/Users/andrewdean/github/moby_game/constants.py",
+		"/Users/andrewdean/github/moby_game/README.md",
+		"/Users/andrewdean/github/moby_game/core.py",
+		"/Users/andrewdean/github/portfolio_site/portfolio.htm",
+		"/Users/andrewdean/github/portfolio_site/.git/COMMIT_EDITMSG",
+		"/Users/andrewdean/github/portfolio_site/README.md",
+		"/Users/andrewdean/github_gt/cs7641/datasets/mushrooms.data",
+		"/Users/andrewdean/Dropbox/Documents/Practice_Files/weka_sets/glass.arff",
+		"/Users/andrewdean/Dropbox/Documents/Practice_Files/weka_sets/ionosphere.arff",
+		"/Users/andrewdean/Dropbox/Documents/Practice_Files/weka_sets/credit-g.arff",
+		"/Users/andrewdean/Dropbox/Documents/Practice_Files/weka_sets/cpu.arff",
+		"/Users/andrewdean/Dropbox/Documents/Practice_Files/weka_sets/breast-cancer.arff",
+		"/Users/andrewdean/github_gt/cs7632/homework3/core.py",
+		"/Users/andrewdean/github_gt/cs7632/homework2/core.py",
+		"/Users/andrewdean/github_gt/cs7632/homework2/runrandomnavigator0.py",
+		"/Users/andrewdean/Downloads/Thesis/main.tex",
+		"/Users/andrewdean/github_gt/cs7632/.git/COMMIT_EDITMSG",
+		"/Users/andrewdean/github_gt/cs7632/README.md",
+		"/Users/andrewdean/github/interview_practice/.git/COMMIT_EDITMSG",
+		"/Users/andrewdean/github/interview_practice/Practice1_2.java",
+		"/Users/andrewdean/github/interview_practice/Practice1_1.java",
+		"/Users/andrewdean/github_gt/ud_android-multi/.git/COMMIT_EDITMSG",
+		"/Users/andrewdean/github_gt/ud_android-input/.git/COMMIT_EDITMSG",
+		"/Users/andrewdean/github_gt/coursera_ml/.git/COMMIT_EDITMSG",
+		"/Users/andrewdean/github_gt/cs7641/.git/COMMIT_EDITMSG",
+		"/Users/andrewdean/github_gt/cs7641/README.md",
+		"/Users/andrewdean/github_gt/cs7632/.git/MERGE_MSG",
+		"/Users/andrewdean/Dropbox/github/interview_practice/README.md",
+		"/Users/andrewdean/Dropbox/github/moby_game/.git/COMMIT_EDITMSG",
+		"/Users/andrewdean/Dropbox/github/moby_game/constants.py",
+		"/Users/andrewdean/Dropbox/Documents/School/School_Spring17/cs7632/homework2/randomnavigator.py",
+		"/Users/andrewdean/Dropbox/Documents/School/School_Spring17/cs7632/homework2/constants.py",
+		"/Users/andrewdean/Dropbox/Documents/School/School_Spring17/cs7632/homework2/core.py",
+		"/Users/andrewdean/Dropbox/github/moby_game/core.py",
+		"/Users/andrewdean/Dropbox/github/moby_game/core,py",
+		"/Users/andrewdean/Dropbox/github/practice/.git/COMMIT_EDITMSG",
+		"/Users/andrewdean/Dropbox/github/practice/Practice1_2.java",
+		"/Users/andrewdean/Dropbox/Documents/School/School_Spring17/practice/Practice1_1.java",
+		"/Users/andrewdean/gitconfig",
+		"/Users/andrewdean/bash_profile",
+		"/Users/andrewdean/git-completion.bash",
+		"/Users/andrewdean/Desktop/test.py",
+		"/Users/andrewdean/Dropbox/Documents/School/School_Spring17/cs7632/homework2/mybuildpathnetwork.py",
+		"/Users/andrewdean/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/andrewdean/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/andrewdean/Dropbox/Documents/School/School_Spring17/cs7641/weka_sets/iris2.arff",
+		"/Users/andrewdean/Dropbox/Documents/School/School_Spring17/cs7632/homework2/utils.py",
+		"/Users/andrewdean/Dropbox/Documents/School/School_Spring17/cs7632/homework2/runrandomnavigator0.py",
+		"/Users/andrewdean/Dropbox/Documents/School/School_Spring17/cs7632/homework1/core.py",
+		"/Users/andrewdean/Dropbox/Documents/School/School_Spring17/cs7632/homework1/mycreategrid.py",
+		"/Users/andrewdean/Dropbox/Documents/School/School_Spring17/cs7632/homework1/utils.py",
+		"/Users/andrewdean/Dropbox/Documents/School/School_Spring17/cs7632/homework1/rungreedygridnavigator4.py",
+		"/Users/andrewdean/Dropbox/Documents/School/School_Spring17/cs7632/homework1/mycreategrid3.py",
+		"/Users/andrewdean/Dropbox/Inbox/mycreategrid.py",
+		"/Users/andrewdean/Dropbox/Documents/School/School_Spring17/cs7632/homework1/rungreedygridnavigator3.py",
+		"/Users/andrewdean/Dropbox/Documents/School/School_Spring17/cs7632/homework1/rungreedygridnavigator2.py",
+		"/Users/andrewdean/Dropbox/Documents/School/School_Spring17/cs7632/homework1/rungreedygridnavigator1.py",
+		"/Users/andrewdean/Dropbox/Documents/School/School_Spring17/cs7641/weka_sets/breast-cancer.arff",
+		"/Users/andrewdean/Dropbox/Documents/School/School_Spring17/practice/Practice1_2.java",
+		"/Users/andrewdean/Dropbox/Documents/School/School_Spring17/cs7641/weka_sets/iris.arff",
+		"/Users/andrewdean/Dropbox/Inbox/1_comments.txt",
+		"/Users/andrewdean/Dropbox/Documents/School/School_Spring17/cs7632/p0/shop.py",
+		"/Users/andrewdean/Dropbox/Documents/School/School_Spring17/cs7632/p0/shopSmart.py",
+		"/Users/andrewdean/Dropbox/Documents/School/School_Spring17/cs7632/p0/buyLotsOfFruit.py",
+		"/Users/andrewdean/Dropbox/Documents/School/School_Spring17/cs7632/homework1/constants.py",
+		"/Users/andrewdean/Dropbox/Inbox/L2 gai",
+		"/Users/andrewdean/Dropbox/Documents/School/School_Spring17/cs7632/homework1/gridnavigator.py",
+		"/Users/andrewdean/Downloads/homework1/mycreategrid.py",
+		"/Users/andrewdean/Downloads/homework1/gridnavigator.py",
+		"/Users/andrewdean/Downloads/homework1/rungreedygridnavigator1.py",
+		"/Users/andrewdean/Downloads/homework1/core.py",
+		"/Users/andrewdean/Downloads/homework1/runbasic.py",
+		"/Library/LaunchAgents/com.avid.ApplicationManagerHelper.plist",
+		"/Library/LaunchAgents/com.avid.ApplicationManager.plist",
+		"/Users/andrewdean/Dropbox/documents/school/school_fall16/cse6010/a2/6010_Assignment2/main.c",
+		"/Users/andrewdean/Dropbox/documents/school/school_fall16/cse6010/a4/tester.c"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"images",
+			"agent",
+			"sprite.group",
+			"screendimensions",
+			"i",
+			"worlddimensions",
+			"draft",
+			"First",
+			"description",
+			"meta",
+			"p",
+			"name",
+			"main",
+			"__init__",
+			"if __init",
+			"world",
+			"delta",
+			"gate",
+			"tab",
+			"time",
+			"__",
+			"line",
+			"getPoint",
+			"minimumdis",
+			"getradius(",
+			"radius",
+			"agent",
+			"line",
+			"lines",
+			"obstacles",
+			"range",
+			"pathnod",
+			"pathnetworknavi",
+			"print",
+			"markpointsongrid",
+			"grid[",
+			"convertline",
+			"greatergrid",
+			"infinite",
+			"vertdist",
+			"hordist",
+			"horDist",
+			"raytrace",
+			"iterator",
+			"horPoint",
+			"vertPoint",
+			"vertpointX",
+			"worldlin",
+			"getLines()",
+			"worldLines",
+			"world",
+			"class world",
+			"world",
+			"ceil",
+			"int(math.floor",
+			"x >= 0",
+			"x>=0",
+			"worldLi",
+			"world",
+			"raytra",
+			"pointinside",
+			"verpoint",
+			"self",
+			"surface",
+			"line",
+			"mycreategrid",
+			"Navigator",
+			"tuple",
+			"def point",
+			"getPoint"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "core.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4292,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								928,
+								929
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 436.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "constants.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 432,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								431,
+								431
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "run.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 478,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								312,
+								312
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "/Users/andrewdean/github_gt/cs7632/homework3/core.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 37764,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10321,
+								10321
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5217.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/andrewdean/Desktop/test.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1653,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1653,
+								1653
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_name": "# Pygame sprite Example",
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1652,
+										1653
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1651,
+										1652
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 303.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.467437966022,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "moby_game.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"README.md"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/github_gt/cs7632/homework3/7632_3.sublime-project"
+			],
+			[
+				"port",
+				"~/github/portfolio_site/portfolio_site.sublime-project"
+			],
+			[
+				"mo",
+				"~/github/moby_game/moby_game.sublime-project"
+			],
+			[
+				"subl",
+				"~/github/moby_game/moby_game.sublime-project"
+			],
+			[
+				"mob",
+				"~/github/moby_game/moby_game.sublime-project"
+			],
+			[
+				"inter",
+				"~/github/interview_practice/interview_practice.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 107.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

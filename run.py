@@ -18,7 +18,7 @@ def run():
     """
 
     world = GameWorld()
-    player = PlayerAgent(world, None, CENTER, None, None)
+    player = PlayerAgent(world, PLAYER, CENTER, None, None)
     world.add_mover(player)
     world.run()
 

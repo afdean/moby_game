@@ -55,8 +55,7 @@ class PlayerAgent(Mover):
     def __init__(self, world, image, position, orientation, speed):
         super(PlayerAgent, self).__init__(world, image, position, orientation, speed)
         # Dummy "image" to use for now (replace with actual images later)
-        self.image = pygame.Surface((50,50))
-        self.image.fill(PURPLE)
+        self.image = pygame.image.load(image).convert()
         self.rect = self.image.get_rect()
         #Center of rect is directly in center of screen
         self.rect.center = position
